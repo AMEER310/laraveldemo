@@ -11,7 +11,8 @@ class patientController extends Controller
      */
     public function index()
     {
-        //
+                    $data['patient'] = \App\Models\patient::all(); 
+    return $data;
     }
 
     /**

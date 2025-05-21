@@ -11,7 +11,8 @@ class reportController extends Controller
      */
     public function index()
     {
-        //
+        $data['report'] = \App\Models\report::all(); 
+    return $data;
     }
 
     /**

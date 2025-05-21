@@ -11,7 +11,9 @@ class appointmentController extends Controller
      */
     public function index()
     {
-        //
+            $data['appointment'] = \App\Models\Appointment::all(); 
+    return $data;
+ 
     }
 
     /**
